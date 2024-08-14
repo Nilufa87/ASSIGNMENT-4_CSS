@@ -1,10 +1,16 @@
 
 Javascript Assignments
+
+
 A. Javascript Basic Part
+
 Objective
+
 Create a simple area calculator using JavaScript, covering the topics of variables, user input, and basic arithmetic operations.
 
+
 Instructions
+
 How to do this assignment?
 First, fork the repository, then clone it to your local machine.
 Start completing the requirements given below.
