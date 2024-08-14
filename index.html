@@ -20,7 +20,7 @@
 <header>
     <body>
         <nav>
-            <ul>
+            <ul id="nav"class="nav card">
                <li><a href="#Introduction">Introduction</a></li> 
                <li><a href="#Skills & Expertise">Skills & Expertise</a></li>
                <li><a href="#My Projects"> My Projects</a></li>
@@ -30,31 +30,31 @@
             
         </nav>
 </header>
-
-    <!--INTRODUCTION SECTION-->
+<main>
+        <!--INTRODUCTION SECTION-->
   <head>
-    <section id="Introduction">
-        <div class="card">
+    <section id="Introduction" class="Introduction card">
+        
             <h1> <strong>Introduction</strong></h1>
-        <em>My Name is Nilufa Akter Boishakhi.</em>
-        <p>I am a student.I am studying at Pabna University of Science and Tecnology Department of Information and Communication Engineering.<br/>
+        <em class="Intro__name">My Name is Nilufa Akter Boishakhi.</em>
+        <p class="Intro__paragraph">I am a student.I am studying at Pabna University of Science and Tecnology Department of Information and Communication Engineering.<br/>
             I am bigeneer of Web Development.I want to be a good Web Develoloper that's why i continously learning.</p>
         <img src="profile.jpg" alt="profile picture" height="200"/>
-        </div>
+        
        </section>
   </head>
    <!--SKILL SECTION-->
    <head>
-    <section id="Skills & Expertise" class="card">
+    <section id="Skills" class="Skills card" >
         <h1> <strong>Skills & Expertise</strong></h1>
         <table border="1" cellpadding="5" cellspacing="0">
-        <thead>
+        <thead class="skills__head">
             <tr>
               <td>Tecnology</td>
               <td>Proefficiency</td>  
             </tr>
         </thead>
-        <tbody>
+        <tbody class="skills__body">
             <tr>
                 <td>C</td>
                 <td rowspan="2">Expert</td>
@@ -82,40 +82,43 @@
         </tbody>
             
         </table>
-        <h2>Skill Progress</h2>
-        <div>
-            <label for="htmlProgress">HTML:</label>
-        <progress id="htmlProgress" value="80" max="100">80%</progress>
-        </div>
-        <div>
-            <label for="cssProgress">CSS:</label>
-            <progress id="cssProgress" value="50" max="100">50%</progress>
-        </div>
-        <div>
-            <label for="CProgress">C:</label>
-        <progress id="CProgress" value="90" max="100">90%</progress>
-        </div>
-        <div>
-            <label for="C++Progress">C++:</label>
-        <progress id="C++Progress" value="60" max="100">60%</progress>
-        </div>
-        <div>
-            <label for="JavaProgress">Java:</label>
-        <progress id="JavaProgress" value="20" max="100">20%</progress>
-        </div>
-
-        <div>
-            <h2>Experiance Label</h2>
-            <label for="ExperianceLavel">Experiance:</label>
-            <meter id="ExperianceLavel" min="0" max="10" value="2">2 years</meter>
-        </div>
         
+        <div class="Skills_progress">
+            <h2>Skill Progress</h2>
+            <div>
+                <label for="htmlProgress">HTML:</label>
+            <progress id="htmlProgress" value="80" max="100">80%</progress>
+            </div>
+            <div>
+                <label for="cssProgress">CSS:</label>
+                <progress id="cssProgress" value="50" max="100">50%</progress>
+            </div>
+            <div>
+                <label for="CProgress">C:</label>
+            <progress id="CProgress" value="90" max="100">90%</progress>
+            </div>
+            <div>
+                <label for="C++Progress">C++:</label>
+            <progress id="C++Progress" value="60" max="100">60%</progress>
+            </div>
+            <div>
+                <label for="JavaProgress">Java:</label>
+            <progress id="JavaProgress" value="20" max="100">20%</progress>
+            </div>
+    
+            <div>
+                <h2>Experiance Label</h2>
+                <label for="ExperianceLavel">Experiance:</label>
+                <meter id="ExperianceLavel" min="0" max="10" value="2">2 years</meter>
+            </div>
+            
+        </div>
     </section>
    </head>
 
    <!--PROJECTS SECTION-->
   <head>
-    <section id="My Projects" class="card">
+    <section id="Projects" class="Projects card">
         <h2> <strong>My Projects</strong></h2>
        <ul>
         
@@ -123,16 +126,16 @@
         <li><a href="https://github.com/Nilufa87/Daraz_Lite">DrazLite</a></li>
        </ul>
          <img src="./project1.png" alt="Daraz_Lite_project1" height="300" />
-         <p>This is my first web project.This is a daraz web page.It's name Daraz_Lite</p>
+         <p class="project__description">This is my first web project.This is a daraz web page.It's name Daraz_Lite</p>
       </section>
   </head>
 
    <!--EDUCATION SECTION-->
   <head>
-    <section id="Education Qualification" class="card">
-        <h1> <strong>Education Qualification</strong></h1>
+    <section id="Education" class="Education card">
+        <h1 class="heading"> <strong>Education Qualification</strong></h1>
         <table border="1" cellpadding="5" cellspacing="0">
-            <thead>
+            <thead class="table_heading">
             <tr>
                 <td>Name of Exam</td>
                 <td>Passing Year</td>
@@ -141,11 +144,11 @@
             </tr>
                 
             </thead>
-            <tbody>
+            <tbody class="table_body">
                 <tr>
                     <td>PSC</td>
                     <td>2013</td>
-                    <td>5.56</td>
+                    <td>4.56</td>
                     <td>Beruan Govt. Primary School</td>
                 </tr>
                 <tr>
@@ -178,26 +181,15 @@
        </section>
   </head>
 
-<div class="card">
-    <h2>Video Section</h2>
-    <video width="320" controls>
-        <source src="./assests/song.mp4" type="video/mp4" />
-        your browser do not support this type of video.
-    </video>
-    <video width="320" controls>
-        <source src="./assests/tere.mp4" type="video/mp4" />
-        your browser do not support this type of video.
-    </video>
-</div>
-
    <!--CONTACT SECTION-->
    <head>
-    <section id="Contact Me" class="card">
+    <section id="Contact" class="Contact card">
         <h2> <strong>Contact Me</strong></h2>
         <form action="https://formspree.io/f/mayrrpdq"
         method="POST">
             <fieldset>
-                <legend>Personal Information</legend>
+                <div class="Contact__description">
+                    <legend>Personal Information</legend>
                 <div>
                     <label for="name">Name:</label>
                 <input type="text" id="name" name="name"  required/>
@@ -209,73 +201,76 @@
             <div>
                 <label for="age">Age:</label>
             <input type="number" id="age" number="age"  min="18" max="60" required/>
-            </div>
+            <div>
+                <label for="experiance">Number of years learning web development:</label>
+            <input type="range" id="experiance" name="experiance" min="0" max="10" value="2" required/>
+        </div>
+        <div>
+            <label for="programe">Favorite programe language:</label>
+        <input list="language" id="programe" name="programe"  required/>
+    
+        <datalist id="language">
+            <option value="C"></option>
+            <option value="C++"></option>
+            <option value="Java"></option>
+            <option value="Javascript"></option>
+        </datalist>
+    </div>
+            <div>
+                <label for="favorite">Favorite color:</label>
+            <input type="color" id="favorite" name="favorite" value="#f00000" required/>
+        </div>
+                
+                <div>
+                    <label for="number">Number:</label>
+                <input type="number" id="number" number="number" required/>
+                </div>
+                <div>
+                    <label for="Message">Message:</label>
+                <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                <input type="password" id="password" number="password" required/>
+                </div>
+                
+                <div>
+                    <label for="website">Website:</label>
+                    <input type="url" id="website" name="website" pattern="https?://.+"/>
+                </div>
+                <div>
+                    <label for="image">Upload image:</label>
+                    <input type="file" id="image" name="image" accept="image/*"/>
+                </div>
+                <div>
+                    <label for="radio">Radio:</label>
+                <input type="radio" id="radio" number="radio" />
+                </div>
+                <div>
+                    <label for="date">DateSelector:</label>
+                <input type="date" id="date" number="date" required/>
+                </div>
+                <div>
+                    <label for="file">Radio:</label>
+                <input type="file" id="file" number="file" required/>
+                </div>
+                
+                <div>
+                    <label for="subject">Subject</label> 
+                    <select name="subject" id="subject">
+                        <option value="inquiry">Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="job opportunity">Job Opportunity</option>
+                    </select>
+                </div>
+        </div>
             </fieldset>
-        <div>
-            <label for="experiance">Number of years learning web development:</label>
-        <input type="range" id="experiance" name="experiance" min="0" max="10" value="2" required/>
-    </div>
-    <div>
-        <label for="programe">Favorite programe language:</label>
-    <input list="language" id="programe" name="programe"  required/>
-
-    <datalist id="language">
-        <option value="C"></option>
-        <option value="C++"></option>
-        <option value="Java"></option>
-        <option value="Javascript"></option>
-    </datalist>
-</div>
-        <div>
-            <label for="favorite">Favorite color:</label>
-        <input type="color" id="favorite" name="favorite" value="#f00000" required/>
-    </div>
-            
-            <div>
-                <label for="number">Number:</label>
-            <input type="number" id="number" number="number" required/>
-            </div>
-            <div>
-                <label for="Message">Message:</label>
-            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <label for="password">Password:</label>
-            <input type="password" id="password" number="password" required/>
-            </div>
-            
-            <div>
-                <label for="website">Website:</label>
-                <input type="url" id="website" name="website" pattern="https?://.+"/>
-            </div>
-            <div>
-                <label for="image">Upload image:</label>
-                <input type="file" id="image" name="image" accept="image/*"/>
-            </div>
-            <div>
-                <label for="radio">Radio:</label>
-            <input type="radio" id="radio" number="radio" />
-            </div>
-            <div>
-                <label for="date">DateSelector:</label>
-            <input type="date" id="date" number="date" required/>
-            </div>
-            <div>
-                <label for="file">Radio:</label>
-            <input type="file" id="file" number="file" required/>
-            </div>
-            
-            <div>
-                <label for="subject">Subject</label> 
-                <select name="subject" id="subject">
-                    <option value="inquiry">Inquiry</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="job opportunity">Job Opportunity</option>
-                </select>
-            </div>
+        
             <div>
                 <button type="submit">submit</button>
-            <button type="reset">clear</button>
+                <button type="reset">clear</button>
+                </div>
+
             </div>
             
         </form>
@@ -283,9 +278,11 @@
    </head>
     
    
+</main>
+
         <!--footer-->
         <footer>
-            <section class="card">
+            <section  id="footer" class="footer card" >
                 
                  <div >
                     <p> Copyright reserved by @Copy; Nilufa Akter2024</p>
@@ -294,36 +291,36 @@
         
                  </div>
                  <div class="social-media">
-                    
+                    <h2>Follow Me</h2>
                     <ul>
                         <li>
                            <a href="https://www.facebook.com/nilufaakter.boishakhi" target="_blank">
                             <i class="fa-brands fa-facebook"></i>
-                            Facebook
+                            
                            </a>
                         </li>
-                    </ul>
+                    
         
-                    <ul>
+                    
                         <li>
                            <a href="https://www.linkedin.com/in/most-nilufa-akter-9761032a7/">
                             <i class="fa-brands fa-linkedin"></i>                   
-                             Linkdin
+                             
                            </a>
                         </li>
-                    </ul>
+                    
         
-                    <ul>
+                    
                         <li>
                            <a href="https://www.instagram.com/1nilufaakterboishakhi87/?hl=en">
                             <i class="fa-brands fa-square-instagram"></i>
-                            Instragram
+                            
                            </a>
                         </li>
                     </ul>
                  </div>
 
-                 <div>
+                 <div id="footer_map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116526.87126097757!2d89.20712182343307!3d24.12031238190311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe825ecbaf4071%3A0xb3ccc3cd149f2643!2sAtgharia%20Upazila!5e0!3m2!1sen!2sbd!4v1718422149274!5m2!1sen!2sbd" title="home direction" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                  
                 </div>
@@ -339,44 +336,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
